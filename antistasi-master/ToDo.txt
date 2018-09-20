@@ -1,0 +1,11 @@
+==== CHECK LIST ====
+
+Edit Factions - Convert AAF to SAF - Convert USF to CDF
+Text Check - Unfuck all text. Fix broken English.
+Weapon/Vehicle Check - Make sure weapon and vehicle lists are up to date.
+Test Mechanics - Make sure respawning isn't stupid and that everything generally functions as intended.
+Maybe write up some lore/backstory garbage. No one will read it, but maybe do it anyway.
+
+Tell Ben to eat a dick - Just because.
+
+Remind Elijah to never forget about Pearl Harbor.
