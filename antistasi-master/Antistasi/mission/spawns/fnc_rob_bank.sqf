@@ -142,7 +142,7 @@ private _fnc_wait_to_return = {
 
 	{
 		if (isPlayer _x) then {
-			[petros,"hint","Park the truck in the base to finish this mission"] remoteExec ["AS_fnc_localCommunication",_x]
+			[Petr,"hint","Park the truck in the base to finish this mission"] remoteExec ["AS_fnc_localCommunication",_x]
 		};
 	} forEach ([80, _truck, "BLUFORSpawn"] call AS_fnc_unitsAtDistance);
 

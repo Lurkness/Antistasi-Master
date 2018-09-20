@@ -19,7 +19,7 @@ if (_salir) exitWith {hint format ["You cannot dismiss %1 groups", AS_NATOname]}
 _pos = getMarkerPos "FIA_HQ";
 
 {
-AS_commander sideChat format ["Petros, I'm sending %1 back to base", _x];
+AS_commander sideChat format ["Petr, I'm sending %1 back to base", _x];
 AS_commander hcRemoveGroup _x;
 _wp = _x addWaypoint [_pos, 0];
 _wp setWaypointType "MOVE";

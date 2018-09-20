@@ -15,7 +15,7 @@ AS_FIAvehicles setVariable ["C_Offroad_01_F", 200];
 AS_FIAvehicles setVariable ["rhs_Ural_Open_Civ_01", 400];
 AS_FIAvehicles setVariable ["rhsusf_mrzr4_d", 50];
 AS_FIAvehicles setVariable ["B_T_LSV_unarmed_01_F", 200];
-AS_FIAvehicles setVariable ["B_G_Offroad_01_armed_F",, 700];
+AS_FIAvehicles setVariable ["B_G_Offroad_01_armed_F", 700];
 AS_FIAvehicles setVariable [statMG, 800];
 AS_FIAvehicles setVariable [statMortar, 800];
 AS_FIAvehicles setVariable [statAT, 800];

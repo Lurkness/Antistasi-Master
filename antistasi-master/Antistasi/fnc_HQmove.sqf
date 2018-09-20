@@ -1,14 +1,14 @@
 #include "macros.hpp"
 AS_SERVER_ONLY("fnc_HQmove.sqf");
 
-petros enableAI "MOVE";
-petros enableAI "AUTOTARGET";
-petros forceSpeed -1;
+Petr enableAI "MOVE";
+Petr enableAI "AUTOTARGET";
+Petr forceSpeed -1;
 
-[[petros, "remove"], "AS_fnc_addAction"] call BIS_fnc_MP;
-call AS_fnc_rearmPetros;
-[petros] join AS_commander;
-petros setBehaviour "AWARE";
+[[Petr, "remove"], "AS_fnc_addAction"] call BIS_fnc_MP;
+call AS_fnc_rearmPetr;
+[Petr] join AS_commander;
+Petr setBehaviour "AWARE";
 
 if isMultiplayer then {
 	{_x hideObjectGlobal true} forEach AS_permanent_HQplacements;
@@ -20,4 +20,4 @@ if isMultiplayer then {
 
 sleep 5;
 
-[[Petros, "buildHQ"],"AS_fnc_addAction"] call BIS_fnc_MP;
+[[Petr, "buildHQ"],"AS_fnc_addAction"] call BIS_fnc_MP;

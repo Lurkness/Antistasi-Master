@@ -26,7 +26,7 @@ private _fnc_initialize = {
 	} forEach (([_location, "roads"] call AS_location_fnc_get) call AS_fnc_shuffle);
 
 	if not _foundSuitablePlace exitWith {
-		[[petros, "globalChat", "Dealer cancelled the deal."],"AS_fnc_localCommunication"] call BIS_fnc_MP;
+		[[Petr, "globalChat", "Dealer cancelled the deal."],"AS_fnc_localCommunication"] call BIS_fnc_MP;
 		_mission call AS_mission_fnc_remove;
 
 		// set the spawn state to `run` so that the next one is `clean`, since this ends the mission

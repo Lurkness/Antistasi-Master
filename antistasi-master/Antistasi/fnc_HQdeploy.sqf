@@ -1,10 +1,10 @@
 #include "macros.hpp"
 AS_SERVER_ONLY("fnc_HQdeploy.sqf");
 
-private _basePos = [position petros, 3, getDir petros] call BIS_Fnc_relPos;
+private _basePos = [position Petr, 3, getDir Petr] call BIS_Fnc_relPos;
 private _pos = +_basePos;
 fuego setPos _pos;
-private _rnd = getdir Petros;
+private _rnd = getdir Petr;
 _pos = [_basePos, 3, _rnd] call BIS_Fnc_relPos;
 caja setPos _pos;
 _rnd = _rnd + 45;

@@ -207,13 +207,13 @@ if (_tipoArty == "BARRAGE") then
 	_eta = (_artyArrayDef1 select 0) getArtilleryETA [_posicionTel, ((getArtilleryAmmo [(_artyArrayDef1 select 0)]) select 0)];
 	_tiempo = time + _eta;
 	_texto = format ["Acknowledged. Fire mission is inbound. ETA %1 secs for the first impact",round _eta];
-	[[petros,"sideChat",_texto],"AS_fnc_localCommunication"] call BIS_fnc_MP;
+	[[Petr,"sideChat",_texto],"AS_fnc_localCommunication"] call BIS_fnc_MP;
 	[_tiempo] spawn
 		{
 		private ["_tiempo"];
 		_tiempo = _this select 0;
 		waitUntil {sleep 1; time > _tiempo};
-		[[petros,"sideChat","Splash. Out"],"AS_fnc_localCommunication"] call BIS_fnc_MP;
+		[[Petr,"sideChat","Splash. Out"],"AS_fnc_localCommunication"] call BIS_fnc_MP;
 		};
 	};
 
@@ -270,13 +270,13 @@ if (_tipoArty != "BARRAGE") then
 	_eta = (_artyArrayDef1 select 0) getArtilleryETA [_posicionTel, ((getArtilleryAmmo [(_artyArrayDef1 select 0)]) select 0)];
 	_tiempo = time + _eta - 5;
 	_texto = format ["Acknowledged. Fire mission is inbound. %2 Rounds fired. ETA %1 secs",round _eta,_roundsMax - _rounds];
-	[[petros,"sideChat",_texto],"AS_fnc_localCommunication"] call BIS_fnc_MP;
+	[[Petr,"sideChat",_texto],"AS_fnc_localCommunication"] call BIS_fnc_MP;
 	};
 
 if (_tipoArty != "BARRAGE") then
 	{
 	waitUntil {sleep 1; time > _tiempo};
-	[[petros,"sideChat","Splash. Out"],"AS_fnc_localCommunication"] call BIS_fnc_MP;
+	[[Petr,"sideChat","Splash. Out"],"AS_fnc_localCommunication"] call BIS_fnc_MP;
 	};
 sleep 10;
 deleteMarker _mrkfin;

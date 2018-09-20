@@ -20,8 +20,8 @@ class AS {
         FNC_BASE(resourcesToggle);
         FNC_BASE(resourcesUpdate);
 
-        FNC_BASE(initPetros);
-        FNC_BASE(rearmPetros);
+        FNC_BASE(initPetr);
+        FNC_BASE(rearmPetr);
         FNC_BASE(initPlayer);
         FNC_BASE(HQbuild);
         FNC_BASE(HQdeploy);
@@ -40,7 +40,7 @@ class AS {
         FNC(arsenal,collectDroppedEquipment);
 
         FNC_BASE(refreshArsenal);
-        FNC_BASE(resetPetrosPosition);
+        FNC_BASE(resetPetrPosition);
 
         FNC_BASE(spendAAFmoney);
         FNC_BASE(updateAll);

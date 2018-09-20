@@ -273,14 +273,14 @@ private _fnc_run = {
 			// activate the timer
 			if !(_active) then {
 				_active = true;
-				[[petros,"globalChat","Hold this position for as long as you can! They will throw a lot at you, so be prepared!"],"AS_fnc_localCommunication"] call BIS_fnc_MP;
+				[[Petr,"globalChat","Hold this position for as long as you can! They will throw a lot at you, so be prepared!"],"AS_fnc_localCommunication"] call BIS_fnc_MP;
 			};
 
 			{
 				// warn players at the edge of the area to not stray too far
 				private _distance = _x distance propTruck;
 				if (_distance > 250 and _distance < 350) then {
-					[petros,"hint", "stay within 250m of the station!"] remoteExec ["AS_fnc_localCommunication", _x];
+					[Petr,"hint", "stay within 250m of the station!"] remoteExec ["AS_fnc_localCommunication", _x];
 				};
 			} forEach (allPlayers - (entities "HeadlessClient_F"));
 
@@ -293,7 +293,7 @@ private _fnc_run = {
 			_active = false;
 
 			if (not call _fnc_missionFailedCondition) then {
-				[[petros,"globalChat","Hostile forces near the position"],"AS_fnc_localCommunication"] call BIS_fnc_MP
+				[[Petr,"globalChat","Hostile forces near the position"],"AS_fnc_localCommunication"] call BIS_fnc_MP
 			};
 
 			waitUntil {sleep 1; call _fnc_increaseCounterCondition or {not call _fnc_continueCounterCondition}};
@@ -316,7 +316,7 @@ private _fnc_run = {
 	};
 	{
 		if (isPlayer _x) then {
-			[petros,"globalChat", _info] remoteExec ["AS_fnc_localCommunication",_x]
+			[Petr,"globalChat", _info] remoteExec ["AS_fnc_localCommunication",_x]
 		}
 	} forEach ([300, propTruck, "BLUFORSpawn"] call AS_fnc_unitsAtDistance);
 

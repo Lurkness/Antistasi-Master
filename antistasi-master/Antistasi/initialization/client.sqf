@@ -195,8 +195,8 @@ if (hayTFAR or hayACE or hayRHS) then {
 	hint format ["%1",_texto];
 };
 
-removeAllActions petros;
-[petros, "mission"] call AS_fnc_addAction;
+removeAllActions Petr;
+[Petr, "mission"] call AS_fnc_addAction;
 
 removeAllActions caja;
 [caja,"arsenal"] call AS_fnc_addAction;
@@ -213,7 +213,7 @@ removeAllActions bandera;
 [bandera,"vehicle"] call AS_fnc_addAction;
 [bandera,"garage"] call AS_fnc_addAction;
 
-bandera addAction [localize "str_act_hqOptions",AS_fnc_UI_manageHQ_menu,nil,0,false,true,"","(isPlayer _this) and (player == AS_commander) and (_this == _this getVariable ['owner',_this]) and (petros == leader group petros)"];
+bandera addAction [localize "str_act_hqOptions",AS_fnc_UI_manageHQ_menu,nil,0,false,true,"","(isPlayer _this) and (player == AS_commander) and (_this == _this getVariable ['owner',_this]) and (Petr == leader group Petr)"];
 
 removeAllActions cajaVeh;
 cajaVeh addAction [localize "str_act_healRepair", "actions\healandrepair.sqf",nil,0,false,true,"","(isPlayer _this) and (_this == _this getVariable ['owner',_this])"];

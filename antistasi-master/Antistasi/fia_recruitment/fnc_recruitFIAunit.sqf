@@ -40,7 +40,7 @@ if not isMultiPlayer then {
     [_player, -_cost] call AS_fnc_changePlayerMoney;
     [_player, "hint", "Soldier Recruited.\n\nRemember: if you use the group menu to switch groups you will lose control of your recruited AI"] remoteExec ["AS_fnc_localCommunication", _player];
 };
-[petros, "directSay", "SentGenReinforcementsArrived"] remoteExec ["AS_fnc_localCommunication", _player];
+[Petr, "directSay", "SentGenReinforcementsArrived"] remoteExec ["AS_fnc_localCommunication", _player];
 
 // the unit becomes owned by the client because the group is owned by the client
 private _unit = group _player createUnit [[_type] call AS_fnc_getFIAUnitClass, position _player, [], 0, "NONE"];

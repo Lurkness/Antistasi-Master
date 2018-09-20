@@ -18,6 +18,6 @@ AS_HQ_placements = [];
 publicVariable "AS_HQ_placements";
 
 fuego inflame ([_dict, "inflame"] call DICT_fnc_get);
-call AS_fnc_initPetros;
+call AS_fnc_initPetr;
 
 placementDone = true; publicVariable "placementDone";

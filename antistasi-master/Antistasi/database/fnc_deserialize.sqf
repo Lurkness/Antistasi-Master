@@ -2,7 +2,7 @@
 AS_SERVER_ONLY("AS_database_fnc_deserialize");
 params ["_string"];
 
-petros allowdamage false;
+Petr allowdamage false;
 
 // stop spawning new locations
 [false] call AS_spawn_fnc_toggle;
@@ -39,7 +39,7 @@ diag_log "[AS] Server: loading AAF arsenal...";
 
 diag_log "[AS] Server: loading missions...";
 ([_dict, "AS_mission"] call DICT_fnc_get) call AS_mission_fnc_fromDict;
-petros allowdamage true;
+Petr allowdamage true;
 
 _dict call DICT_fnc_delete;
 diag_log "[AS] Server: loading completed.";

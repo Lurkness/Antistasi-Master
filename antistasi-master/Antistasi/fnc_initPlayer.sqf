@@ -30,10 +30,10 @@ if (isMultiplayer) then {
     player addEventHandler ["Fired", {
 		private _tipo = _this select 1;
 		if ((_tipo == "Put") or (_tipo == "Throw")) then {
-			if (player distance petros < 50) then {
+			if (player distance Petr < 50) then {
 				deleteVehicle (_this select 6);
 				if (_tipo == "Put") then {
-					if (player distance petros < 10) then {[player,60] spawn AS_fnc_penalizePlayer};
+					if (player distance Petr < 10) then {[player,60] spawn AS_fnc_penalizePlayer};
 				};
 			};
 		};
