@@ -79,7 +79,7 @@ private _fnc_wait_to_arrive = {
 			group player selectLeader player;
 			hint "";
 		};
-		[[petros,"globalChat","Engineers are now deploying the mines."],"AS_fnc_localCommunication"] call BIS_fnc_MP;
+		[[Petr,"globalChat","Engineers are now deploying the mines."],"AS_fnc_localCommunication"] call BIS_fnc_MP;
 		[leader _group, _mrk, "SAFE","SPAWNED", "SHOWMARKER"] spawn UPSMON;
 	} else {
 		([_mission, "FAILED"] call AS_mission_spawn_fnc_loadTask) call BIS_fnc_setTask;

@@ -5,7 +5,7 @@ private _hqDestroyed = !_hqInitialPlacement;
 
 if (_hqDestroyed) then {
 	AS_commander allowDamage false;
-	"Petros is Dead" hintC "Petros has been killed. You lost part of your assets and need to select a new HQ position far from the enemies.";
+	"Petr is Dead" hintC "Petr has been killed. You lost part of your assets and need to select a new HQ position far from the enemies.";
 } else {
 	diag_log "[AS] INFO: New Game selected.";
 	hint "Select the position you want to put your HQ.

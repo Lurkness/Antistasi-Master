@@ -86,7 +86,7 @@ if (_type == "send_meds") exitWith {
                     private _num = 2 + (floor random 5);
                     cajaVeh addMagazineCargoGlobal [_item, _num];
                 };
-                [[petros,"globalChat","Someone delivered mines to our camp [repair box]"],"AS_fnc_localCommunication"] call BIS_fnc_MP;
+                [[Petr,"globalChat","Someone delivered mines to our camp [repair box]"],"AS_fnc_localCommunication"] call BIS_fnc_MP;
             };
         }, []]]]
 };

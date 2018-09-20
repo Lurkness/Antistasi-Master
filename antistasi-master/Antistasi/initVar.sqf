@@ -256,7 +256,7 @@ if (isClass (configFile >> "CfgPatches" >> "task_force_radio")) then {
 };
 publicVariable "hayTFAR";
 
-call AS_fnc_initPetros;
+call AS_fnc_initPetr;
 call AS_fnc_HQdeploy;
 
 

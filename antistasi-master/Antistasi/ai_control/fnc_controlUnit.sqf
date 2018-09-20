@@ -1,7 +1,7 @@
 params ["_unit"];
 
-if (_unit == Petros) exitWith {
-    hint "You cannot control Petros";
+if (_unit == Petr) exitWith {
+    hint "You cannot control Petr";
 };
 
 if (player != leader group player) exitWith {hint "You cannot control AI if you are not the squad leader"};

@@ -5,7 +5,7 @@ if (!([player] call AS_fnc_hasRadio)) exitWith {hint "You need a radio in your i
 
 private _enemiesClose = false;
 {
-	if ((side _x == side_red) and (_x distance petros < 250) and (not(captive _x))) exitWith {_enemiesClose = true};
+	if ((side _x == side_red) and (_x distance Petr < 250) and (not(captive _x))) exitWith {_enemiesClose = true};
 } forEach allUnits;
 
 if (_enemiesClose) exitWith {Hint "You cannot Recruit Squads with enemies near your HQ"};
@@ -62,7 +62,7 @@ _grupo setGroupId [format ["%1%2",_groupID,{side (leader _x) == side_blue} count
 leader _grupo setBehaviour "SAFE";
 AS_commander hcSetGroup [_grupo];
 _grupo setVariable ["isHCgroup", true, true];
-petros directSay "SentGenReinforcementsArrived";
+Petr directSay "SentGenReinforcementsArrived";
 hint format ["Group %1 at your command.\n\nGroups are managed from the High Command bar (Default: CTRL+SPACE)\n\nIf the group gets stuck, use the AI Control feature to make them start moving. Mounted Static teams tend to get stuck (solving this is WiP)\n\nTo assign a vehicle for this group, look at some vehicle, and use Vehicle Squad Mngmt option in Y menu", groupID _grupo];
 
 
@@ -119,4 +119,4 @@ _veh setVariable ["owner",_grupo,true];
 leader _grupo assignAsDriver _veh;
 {[_x] orderGetIn true; [_x] allowGetIn true} forEach units _grupo;
 hint "Vehicle Purchased";
-petros directSay "SentGenBaseAS_fnc_unlockVehicle";
+Petr directSay "SentGenBaseAS_fnc_unlockVehicle";

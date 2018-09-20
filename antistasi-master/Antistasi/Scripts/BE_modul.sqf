@@ -432,7 +432,7 @@ fnc_BE_broadcast = {
 		_pI pushBackUnique (format ["Current FIA watchpost cap: %1", BE_current_FIA_WP_Cap]);
 	};
 
-	[petros,"BE",_pI] remoteExec ["AS_fnc_localCommunication",AS_commander];
+	[Petr,"BE",_pI] remoteExec ["AS_fnc_localCommunication",AS_commander];
 };
 
 #define BE_STR_CTER1 "At least 1 outpost/base/airport under your control"

@@ -5,11 +5,11 @@ params ["_obj"];
 
 private _pos = position _obj;
 if ((_pos distance fuego) > 30) exitWith {
-    [petros,"hint","Too far from HQ."] remoteExec ["AS_fnc_localCommunication",AS_commander];
+    [Petr,"hint","Too far from HQ."] remoteExec ["AS_fnc_localCommunication",AS_commander];
     deleteVehicle _obj;
 };
 if !(isNil "vehiclePad") exitWith {
-    [petros,"hint","Pad already deployed."] remoteExec ["AS_fnc_localCommunication",AS_commander];
+    [Petr,"hint","Pad already deployed."] remoteExec ["AS_fnc_localCommunication",AS_commander];
     deleteVehicle _obj;
 };
 

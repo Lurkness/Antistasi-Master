@@ -18,7 +18,7 @@ while {true} do {
 		_player setVariable ["rank", _new_rank, true];
 		_player setUnitRank _new_rank;
 
-		[petros,"hint",format ["%1: %2.\n\nCONGATULATIONS!",name _player, _new_rank]] remoteExec ["AS_fnc_localCommunication"];
+		[Petr,"hint",format ["%1: %2.\n\nCONGATULATIONS!",name _player, _new_rank]] remoteExec ["AS_fnc_localCommunication"];
 		_rank = _new_rank;
 		_abbreviation = AS_rank_abbreviations select _next_index;
 		_next_index = (_next_index + 1) min (count AS_ranks - 1);
@@ -29,7 +29,7 @@ while {true} do {
 		_player setVariable ["rank", _new_rank, true];
 		_player setUnitRank _new_rank;
 
-		[petros,"hint",format ["%1: %2.\n\nSAD!",name _player, _new_rank]] remoteExec ["AS_fnc_localCommunication"];
+		[Petr,"hint",format ["%1: %2.\n\nSAD!",name _player, _new_rank]] remoteExec ["AS_fnc_localCommunication"];
 		_rank = _new_rank;
 		_abbreviation = AS_rank_abbreviations select _prev_index;
 		_next_index = _curr_index;

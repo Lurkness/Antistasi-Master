@@ -49,4 +49,4 @@ if (_csat != 0) then {
 	_text = _text + format["%1: %2%3", AS_CSATname, _csat call _getSign, _csat];
 };
 
-[petros,"income",_text] remoteExec ["AS_fnc_localCommunication",AS_commander];
+[Petr,"income",_text] remoteExec ["AS_fnc_localCommunication",AS_commander];

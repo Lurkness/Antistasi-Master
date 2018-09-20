@@ -5,15 +5,15 @@ params ["_position"];
 "delete" call AS_fnc_HQaddObject;
 
 ["FIA_HQ", "position", _position] call AS_location_fnc_set;
-call AS_fnc_initPetros;
+call AS_fnc_initPetr;
 call AS_fnc_HQdeploy;
 
 if isNil "placementDone" then {
 	// move all players to the HQ.
 	if isMultiplayer then {
-		{_x setPos getPos petros} forEach playableUnits;
+		{_x setPos getPos Petr} forEach playableUnits;
 	} else {
-		AS_commander setPos (getPos petros);
+		AS_commander setPos (getPos Petr);
 	};
 
     placementDone = true;

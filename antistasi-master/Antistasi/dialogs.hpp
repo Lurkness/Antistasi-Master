@@ -475,11 +475,11 @@ class maintenance_menu
 	{
     AS_DIALOG(2,"Maintenance","closeDialog 0; createDialog ""game_options_commander"";");
 
-	#define STR_MAINT_PET "[] remoteExec [""fnc_MAINT_resetPetros"", 2];"
+	#define STR_MAINT_PET "[] remoteExec [""fnc_MAINT_resetPetr"", 2];"
 
-	BTN_L(1,-1, "Reset HQ", "Resets all HQ items to near Petros.", "closeDialog 0; createDialog ""HQ_reset_menu"";");
+	BTN_L(1,-1, "Reset HQ", "Resets all HQ items to near Petr.", "closeDialog 0; createDialog ""HQ_reset_menu"";");
 	BTN_L(2,-1, "Cleanup arsenal", "Remove items that do not exist or are unlocked.", "[] remoteExec [""AS_fnc_refreshArsenal"", 2]");
-	BTN_R(1,-1, "Reset Petros' position", "Move Petros next to the campfire at HQ.", "[] remoteExec [""AS_fnc_resetPetrosPosition"", 2]");
+	BTN_R(1,-1, "Reset Petr' position", "Move Petr next to the campfire at HQ.", "[] remoteExec [""AS_fnc_resetPetrPosition"", 2]");
 	BTN_R(2,-1, "Fix Y button", "Press in case the Y button stops working.", "closeDialog 0; [] execVM ""reinitY.sqf"";");
 	};
 };

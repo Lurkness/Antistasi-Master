@@ -16,7 +16,7 @@ if (_objType == "pad") exitWith {
 		if (str typeof _x find "Land_Bucket_painted_F" > -1) then {
 			[_x, {deleteVehicle _this}] remoteExec ["call", 0];
 		};
-	} forEach nearestObjects [petros, [], 80];
+	} forEach nearestObjects [Petr, [], 80];
 	private _padBag = "Land_Bucket_painted_F" createVehicle [0,0,0];
 	_padBag setPos ([getPos fuego, 2, floor(random 361)] call BIS_Fnc_relPos);
 	[[_padBag, "moveObject"], "AS_fnc_addAction"] call BIS_fnc_MP;

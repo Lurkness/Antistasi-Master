@@ -101,90 +101,99 @@ AS_fnc_FIACustomSquad_initialization = {
 
 // Equipment unlocked by default
 unlockedWeapons = [
+		// Binoculars
 	"Rangefinder",
 	"Binocular",
-	"rhs_weap_akms",
-	"rhs_weap_pkm",
-	"rhs_weap_rpg7",
-	"tf47_smaw",
-	"tf47_m3maaws",
-	"rhs_weap_m24sws",
-	"rhs_weap_m38_rail",
-	"rhs_weap_kar98k",
-	"rhs_weap_pp2000_folded",
-	"rhs_weap_savz61",
-	"rhs_weap_makarov_pm",
-	"rhs_weap_pb_6p9",
-	"rhs_weap_pya",
-	"rhs_weap_akm_zenitco01_b33",
-	"rhs_weap_aks74u",
-	"rhs_weap_m70b1n",
-	"rhs_weap_m16a4",
-	"rhs_weap_M590_8RD",
-	"rhs_weap_M590_5RD",
-	"rhs_weap_MP44",
-	"rhs_weap_m3a1",
-	"rhs_weap_m3a1_specops",
-	"rhs_weap_m1garand_sa43",
-	"rhsusf_weap_m1911a1",
-	"hlc_rifle_aks74",
-	"hlc_rifle_g3a3v",
-	"hlc_rifle_g3a3ris",
-	"hlc_rifle_M14_Bipod_Rail",
-	"hlc_rifle_FAL5000Rail",
-	"hlc_rifle_FAL5061Rail"
+		// Launchers
+	"rhs_weap_rpg7", // << RPG-7
+	"rhs_weap_fim92", // << Stinger Platform 
+	"tf47_smaw", // << SMAW
+	"tf47_m3maaws", // << MAAWS
+		// Sidearms
+	"rhs_weap_makarov_pm", // << Mak PM
+	"rhs_weap_pb_6p9", // << 6P9 
+	"rhs_weap_pya", // << Grach MP-443
+	"rhsusf_weap_m1911a1", // << M1911
+	"rhs_weap_pp2000_folded", // << PP2000 
+	"rhs_weap_savz61", // << Vz. 61
+		// Rifles/Primaries
+	"rhs_weap_m24sws", // << M24 SWS 
+	"rhs_weap_m38_rail", // << Mosin (rail) 
+	"rhs_weap_kar98k", // << Kar98K
+	"rhs_weap_akms", // << AKMS
+	"rhs_weap_pkm", // << PKM
+	"rhs_weap_akm_zenitco01_b33", // << AKM Zenitco Furniture
+	"rhs_weap_aks74u", // << AKS74U
+	"rhs_weap_m70b1n", // << M70B
+	"rhs_weap_m16a4", // << M16A4
+	"rhs_weap_M590_8RD", // << 8RND Shotgun
+	"rhs_weap_M590_5RD", // << 5RND Shotgun
+	"rhs_weap_MP44", // << MP44
+	"rhs_weap_m3a1", // << Grease Gun
+	"rhs_weap_m3a1_specops", // << Grease Gun (special)
+	"rhs_weap_m1garand_sa43", // << M1 Garand
+	"hlc_rifle_aks74", // << AKS74 
+	"hlc_rifle_g3a3v", // << G3 
+	"hlc_rifle_g3a3ris", // << G3 RIS 
+	"hlc_rifle_M14_Bipod_Rail", // << M14 Bipod 
+	"hlc_rifle_FAL5000Rail", // << FAL PARA 
+	"hlc_rifle_FAL5061Rail" // << FAL 
 
 ];
 
 unlockedMagazines = [
-	"rhs_30Rnd_762x39mm",
-	"rhs_mag_9x18_12_57N181S",
-	"rhs_rpg7_PG7VL_mag",
-	"rhsgref_5Rnd_762x54_m38",
-	"rhsgref_5Rnd_792x57_kar98k",
-	"rhsgref_8Rnd_762x63_M2B_M1rifle",
-	"rhs_mag_rgd5",
-	"rhs_100Rnd_762x54mmR_green",
-	"rhs_100Rnd_762x54mmR",
-	"rhs_mag_9x19mm_7n21_20",
-	"rhsgref_20rnd_765x17_vz61",
-	"rhsgref_30rnd_792x33_SmE_StG",
-	"rhsgref_30rnd_1143x23_M1911B_SMG",
-	"rhsgref_30rnd_1143x23_M1911B_2mag_SMG",
-	"rhs_mag_9x18_8_57N181S",
-	"rhs_mag_9x19_17",
-	"rhs_30Rnd_545x39_AK",
-	"rhsgref_5Rnd_762x54_m38",
-	"rhsusf_5Rnd_762x51_M993_Mag",
-	"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Green",
-	"rhs_mag_30Rnd_556x45_M855_Stanag",
-	"rhsusf_8Rnd_00Buck",
-	"rhsusf_5Rnd_00Buck",
-	"rhsusf_8Rnd_Slug",
-	"rhsusf_5Rnd_Slug",
-	"rhsusf_mag_7x45acp_MHP",
-	"rhs_mag_rdg2_white",
-	"rhs_rpg7_OG7V_mag",
-	"rhs_rpg7_PG7V_mag",
-	"rhs_rpg7_PG7VR_mag",
-	"rhs_rpg7_TBG7V_mag",
-	"tf47_smaw_HEAA",
-	"tf47_smaw_HEDP",
-	"tf47_m3maaws_HE",
-	"tf47_m3maaws_HEAT",
-	"tf47_m3maaws_SMOKE",
-	"tf47_m3maaws_ILLUM",
-	"hlc_20rnd_762x51_b_G3",
-	"hlc_50rnd_762x51_M_G3",
-	"hlc_20rnd_762x51_B_M14",
-	"hlc_20rnd_762x51_T_M14",
-	"hlc_20rnd_762x51_T_fal",
-	"hlc_20rnd_762x51_B_fal"
+		// Sidearm ammo
+	"rhsusf_mag_7x45acp_MHP", // << M1911 Mag
+	"rhs_mag_9x19mm_7n21_20", // << 20rd PP2000
+	"rhs_mag_9x18_8_57N181S", // << PM Mag
+	"rhs_mag_9x19_17", // << Grach Mag
+	"rhsgref_20rnd_765x17_vz61", // << Vz. 61 20rd Mag
+		// Rifle Ammo
+	"rhsgref_5Rnd_762x54_m38", // << Mosin Ammo
+	"rhsusf_5Rnd_762x51_M993_Mag", // << SWS AP Mag
+	"rhsgref_5Rnd_792x57_kar98k", // << Kar98K Ammo
+	"rhsgref_8Rnd_762x63_M2B_M1rifle", // << M1 Garand Enblock
+	"rhs_100Rnd_762x54mmR_green", // << PKM Box (Tracer)
+	"rhs_100Rnd_762x54mmR", // << PKM Box
+	"rhsgref_30rnd_792x33_SmE_StG", // << 30rd MP44 Mag
+	"rhsgref_30rnd_1143x23_M1911B_SMG", // << Grease Gun Mag
+	"rhsgref_30rnd_1143x23_M1911B_2mag_SMG", // << Grease Gun Jungle Mag
+	"rhs_30Rnd_545x39_AK", // <<  30rd AK 5.45x39
+	"rhs_30Rnd_762x39mm", // << 30rd AK 7.62x39	
+	"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Green", // << 5.56 M855 STANAG (Tracer)
+	"rhs_mag_30Rnd_556x45_M855_Stanag", // << 5.56 M855 STANAG
+	"hlc_20rnd_762x51_b_G3", // << 20rd EPR G3 
+	"hlc_50rnd_762x51_M_G3", // << 50rd (Tracers 4) G3
+	"hlc_20rnd_762x51_B_M14", // << 20rd EPR M14
+	"hlc_20rnd_762x51_T_M14", // << 20rd Tracer M14 
+	"hlc_20rnd_762x51_T_fal", // << 20rd Tracer FAL 
+	"hlc_20rnd_762x51_B_fal," // << 20rd EPR FAL
+		// Shot Shells
+	"rhsusf_8Rnd_00Buck", // <<  8rd 00 Buck 
+	"rhsusf_5Rnd_00Buck", // << 5rd 00 Buck 
+	"rhsusf_8Rnd_Slug", // << 8rd Slug
+	"rhsusf_5Rnd_Slug", // << 5rd Slug
+		// Launcher Ammo
+	"rhs_rpg7_PG7V_mag", // << PG7V (RPG Basic HEAT)
+	"rhs_rpg7_PG7VL_mag", // << PG7-VL (RPG Improved HEAT) 
+	"rhs_rpg7_OG7V_mag", // << OG7V (RPG Frag)
+	"rhs_rpg7_PG7VR_mag", // << PG7VR (Tandem HEAT)
+	"rhs_rpg7_TBG7V_mag", // << TBG7V (RPG Thermobaric)
+	"rhs_weap_fim92_mag", // << Stinger Missile 
+	"tf47_smaw_HEAA", // << SMAW HEAA
+	"tf47_smaw_HEDP", // <<  SMAW HEDP
+	"tf47_m3maaws_HE", // << Maaws HE 
+	"tf47_m3maaws_HEAT", // << Maaws HEAT 
+	"tf47_m3maaws_SMOKE", // << Maaws SMOKE 
+	"tf47_m3maaws_ILLUM", // << Maaws Flare
+		// Grenades
+	"rhs_mag_rgd5", // << RGD 5
+	"rhs_mag_rdg2_white" // << RGD2 Smoke
 
 ];
 
 unlockedItems = unlockedItems + [
-	//Items
+		//Items
 	"ToolKit",
 	"Chemlight_Green",
 	"SmokeShell",
@@ -192,7 +201,7 @@ unlockedItems = unlockedItems + [
 	"SmokeShellPurple",
 	"IEDUrbanBig_Remote_Mag",
 	"IEDUrbanSmall_Remote_Mag",
-	//Accessories
+		//Accessories
 	"rhs_acc_pgs64_74u", // << AKS-74UN muzzle attachment
 	"rhs_acc_dtk", // << default AK74 muzzle attachment
 	"optic_KHS_blk", // << Kahlia Black
@@ -205,7 +214,7 @@ unlockedItems = unlockedItems + [
 	"sma_eotech552", // << Eotech
 	"sma_eotech552_3xdown", // << Eotech + 3x Magnifier
 	"rhs_acc_harris_swivel", // << Harris Bipod
-	//Clothing
+		//Clothing
 	"U_BG_Guerilla1_1",
 	"U_BG_Guerilla2_1",
 	"U_BG_Guerilla2_2",
@@ -288,7 +297,7 @@ unlockedItems = unlockedItems + [
 	"V_TacVest_blk",
 	"V_TacVest_blk_POLICE",
 	"min_rf_beanie_black",
-	//RHS 
+		//RHS 
 	"rhs_vest_pistol_holster",
 	"rhs_scarf",
 	"rhsgref_uniform_altis_lizard",
@@ -304,7 +313,7 @@ unlockedItems = unlockedItems + [
 	"rhs_altyn_visordown",
 	"rhs_balaclava",
 	"rhs_balaclava1_olive",
-	// VSM
+		// VSM
 	"VSM_FAPC_Operator_OGA_OD",
 	"VSM_RAV_operator_OGA_OD",
 	"VSM_LBT6094_operator_OGA_OD",
@@ -315,7 +324,7 @@ unlockedItems = unlockedItems + [
 	"VSM_Beanie_Black",
 	"VSM_Beanie_tan",
 	"VSM_Beanie_OD",
-	// /asg/ custom
+		// /asg/ custom
 	"VSM_M81_Camo_GRY_TShirt",
 	"VSM_FAPC_Operator_OGA_ODBLK",
 	"PU_shemagh_Gry",

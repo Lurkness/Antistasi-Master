@@ -26,4 +26,4 @@ if (_type == "status") then {
     };
 };
 
-[petros,_type,_pI] remoteExec ["AS_fnc_localCommunication",AS_commander];
+[Petr,_type,_pI] remoteExec ["AS_fnc_localCommunication",AS_commander];

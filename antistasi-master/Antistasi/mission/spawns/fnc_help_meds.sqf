@@ -233,7 +233,7 @@ private _fnc_wait_to_unload = {
 		private _message = format ["Good to go. Deliver these supplies to %1 on the double.",[_location] call AS_fnc_location_name];
 		{
 			if (isPlayer _x) then {
-				[petros,"globalChat",_message] remoteExec ["AS_fnc_localCommunication",_x]
+				[Petr,"globalChat",_message] remoteExec ["AS_fnc_localCommunication",_x]
 			};
 		} forEach ([80, _truck, "BLUFORSpawn"] call AS_fnc_unitsAtDistance);
 
@@ -264,7 +264,7 @@ private _fnc_wait_to_deliver = {
 		private _message = "Leave the vehicle here, they'll come to pick it up.";
 		{
 			if (isPlayer _x) then {
-				[petros,"globalChat",_message] remoteExec ["AS_fnc_localCommunication",_x]
+				[Petr,"globalChat",_message] remoteExec ["AS_fnc_localCommunication",_x]
 			};
 		} forEach ([80, _truck, "BLUFORSpawn"] call AS_fnc_unitsAtDistance);
 
