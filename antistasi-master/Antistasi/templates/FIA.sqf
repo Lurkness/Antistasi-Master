@@ -20,6 +20,20 @@ AS_FIAhelmets_undercover = [
 	"H_Beret_02", "H_Watchcap_khk"
 ];
 
+LRK_FIAuniforms_specialforces = [
+
+	"U_IG_leader",
+
+	"U_BG_leader",
+
+	"U_OG_leader"
+	
+]
+
+LRK_FIAgoogles_specialforces = [
+		"G_Balaclava_blk",
+]
+
 AS_FIAvests_undercover = [
 	"V_BandollierB_oli"
 ];
